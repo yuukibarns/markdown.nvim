@@ -4,6 +4,8 @@ A minimal and fast plugin for the conceal of latex blocks in markdown, forked fr
 
 ## Installation
 
+Use `folke/lazy.nvim`:
+
 ```lua
 {
     "yuukibarns/markdown.nvim"
