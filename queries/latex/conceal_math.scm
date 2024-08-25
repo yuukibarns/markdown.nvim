@@ -3,6 +3,12 @@
   command: ((command_name) @conceal
 						   (#any-of? @conceal
 							"\\\\"
+							"\\lbrack"
+							"\\rbrack"
+							"\\lparen"
+							"\\rparen"
+							"\\lbrace"
+							"\\rbrace"
 							"\\{"
 							"\\}"
 							"\\|"
@@ -14,6 +20,12 @@
   ; (#not-has-ancestor? @conceal label_definition text_mode)
   (#set-pairs! @conceal conceal
    "\\\\" "⏎"
+   "\\lbrack" "["
+   "\\rbrack" "]"
+   "\\lparen" "("
+   "\\rparen" ")"
+   "\\lbrace" "{"
+   "\\rbrace" "}"
    "\\{" "{"
    "\\}" "}"
    "\\|" "‖"
