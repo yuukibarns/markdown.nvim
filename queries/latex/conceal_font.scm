@@ -1,15 +1,7 @@
 (generic_command
   command: (command_name) @conceal
-  (#any-of? @conceal "\\emph" "\\mathit" "\\textit" "\\mathbf" "\\textbf" "\\mathrm" "\\bm" "\\vec")
+  (#any-of? @conceal "\\emph" "\\mathit" "\\textit" "\\mathbf" "\\textbf")
   (#set! conceal ""))
-((generic_command
-   command: (command_name)
-   arg: (curly_group)) @conceal
- (#lua-match? @conceal "\\mathrm{[di]}")
- (#set-pairs! @conceal conceal
-  "\\mathrm{d}" "d"
-  "\\mathrm{i}" "i"
-  ))
 ((generic_command
    command: (command_name)
    arg: (curly_group)) @conceal
