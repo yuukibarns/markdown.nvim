@@ -20,4 +20,4 @@
 (text_mode
   command: _ @conceal (#set! conceal ""))
 
-("\\item" @punctuation.special (#set! conceal "○"))
+;("\\item" @punctuation.special (#set! conceal "○"))
