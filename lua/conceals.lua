@@ -66,7 +66,7 @@ local function load_queries(args)
 	vim.treesitter.query.add_predicate("has-grandparent?", hasgrandparent, { force = true })
 	vim.treesitter.query.add_directive("set-pairs!", setpairs, { force = true, all = true })
 	for _, name in ipairs(args.enabled) do
-		local files = vim.api.nvim_get_runtime_file("queries/latex/conceal_" .. name .. ".scm", true)
+		local files = vim.api.nvim_get_runtime_file("queries/conceal_" .. name .. ".scm", true)
 		for _, file in ipairs(files) do
 			table.insert(filenames, file)
 		end
