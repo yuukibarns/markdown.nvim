@@ -1,6 +1,6 @@
 (generic_command
   command: (command_name) @conceal
-  (#any-of? @conceal "\\emph" "\\mathit" "\\textit" "\\mathbf" "\\textbf")
+  (#any-of? @conceal "\\emph" "\\mathit" "\\textit" "\\mathbf" "\\textbf" "\\bm" "\\mathrm")
   (#set! conceal ""))
 ((generic_command
    command: (command_name)
