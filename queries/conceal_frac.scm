@@ -21,7 +21,7 @@
     "}" @close1)
   arg: (curly_group)
   (#has-ancestor? @close1 math_environment inline_formula displayed_equation)
-  (#set! conceal "⧸"))
+  (#set! conceal "/"))
 
 (generic_command
   command: (command_name) @_cmd
@@ -30,7 +30,7 @@
   arg: (curly_group
     "{" @open2)
   (#has-ancestor? @open2 math_environment inline_formula displayed_equation)
-  (#set! conceal " "))
+  (#set! conceal "/"))
 
 (generic_command
   command: (command_name) @_cmd
@@ -64,7 +64,7 @@
     "}" @close1)
   arg: (curly_group)
   (#has-ancestor? @close1 math_environment inline_formula displayed_equation)
-  (#set! conceal "⧸"))
+  (#set! conceal "/"))
 
 (generic_command
   command: (command_name) @_cmd
@@ -73,7 +73,7 @@
   arg: (curly_group
     "{" @open2)
   (#has-ancestor? @open2 math_environment inline_formula displayed_equation)
-  (#set! conceal " "))
+  (#set! conceal "/"))
 
 (generic_command
   command: (command_name) @_cmd

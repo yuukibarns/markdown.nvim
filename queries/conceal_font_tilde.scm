@@ -125,6 +125,98 @@
 ((generic_command
    command: (command_name)
    arg: (curly_group)) @conceal
+ (#lua-match? @conceal "\\tilde{\\mathbf{[a-zA-Z]}}")
+ (#set! priority 101)
+ (#set-pairs! @conceal conceal
+   "\\tilde{\\mathbf{A}}" "𝐀̃"
+   "\\tilde{\\mathbf{B}}" "𝐁̃"
+   "\\tilde{\\mathbf{C}}" "𝐂̃"
+   "\\tilde{\\mathbf{D}}" "𝐃̃"
+   "\\tilde{\\mathbf{E}}" "𝐄̃"
+   "\\tilde{\\mathbf{F}}" "𝐅̃"
+   "\\tilde{\\mathbf{G}}" "𝐆̃"
+   "\\tilde{\\mathbf{H}}" "𝐇̃"
+   "\\tilde{\\mathbf{I}}" "𝐈̃"
+   "\\tilde{\\mathbf{J}}" "𝐉̃"
+   "\\tilde{\\mathbf{K}}" "𝐊̃"
+   "\\tilde{\\mathbf{L}}" "𝐋̃"
+   "\\tilde{\\mathbf{M}}" "𝐌̃"
+   "\\tilde{\\mathbf{N}}" "𝐍̃"
+   "\\tilde{\\mathbf{O}}" "𝐎̃"
+   "\\tilde{\\mathbf{P}}" "𝐏̃"
+   "\\tilde{\\mathbf{Q}}" "𝐐̃"
+   "\\tilde{\\mathbf{R}}" "𝐑̃"
+   "\\tilde{\\mathbf{S}}" "𝐒̃"
+   "\\tilde{\\mathbf{T}}" "𝐓̃"
+   "\\tilde{\\mathbf{U}}" "𝐔̃"
+   "\\tilde{\\mathbf{V}}" "𝐕̃"
+   "\\tilde{\\mathbf{W}}" "𝐖̃"
+   "\\tilde{\\mathbf{X}}" "𝐗̃"
+   "\\tilde{\\mathbf{Y}}" "𝐘̃"
+   "\\tilde{\\mathbf{Z}}" "𝐙̃"
+   "\\tilde{\\mathbf{a}}" "𝐚̃"
+   "\\tilde{\\mathbf{b}}" "𝐛̃"
+   "\\tilde{\\mathbf{c}}" "𝐜̃"
+   "\\tilde{\\mathbf{d}}" "𝐝̃"
+   "\\tilde{\\mathbf{e}}" "𝐞̃"
+   "\\tilde{\\mathbf{f}}" "𝐟̃"
+   "\\tilde{\\mathbf{g}}" "𝐠̃"
+   "\\tilde{\\mathbf{h}}" "𝐡̃"
+   "\\tilde{\\mathbf{i}}" "𝐢̃"
+   "\\tilde{\\mathbf{j}}" "𝐣̃"
+   "\\tilde{\\mathbf{k}}" "𝐤̃"
+   "\\tilde{\\mathbf{l}}" "𝐥̃"
+   "\\tilde{\\mathbf{m}}" "𝐦̃"
+   "\\tilde{\\mathbf{n}}" "𝐧̃"
+   "\\tilde{\\mathbf{o}}" "𝐨̃"
+   "\\tilde{\\mathbf{p}}" "𝐩̃"
+   "\\tilde{\\mathbf{q}}" "𝐪̃"
+   "\\tilde{\\mathbf{r}}" "𝐫̃"
+   "\\tilde{\\mathbf{s}}" "𝐬̃"
+   "\\tilde{\\mathbf{t}}" "𝐭̃"
+   "\\tilde{\\mathbf{u}}" "𝐮̃"
+   "\\tilde{\\mathbf{v}}" "𝐯̃"
+   "\\tilde{\\mathbf{w}}" "𝐰̃"
+   "\\tilde{\\mathbf{x}}" "𝐱̃"
+   "\\tilde{\\mathbf{y}}" "𝐲̃"
+   "\\tilde{\\mathbf{z}}" "𝐳̃"))
+
+((generic_command
+   command: (command_name)
+   arg: (curly_group)) @conceal
+ (#lua-match? @conceal "\\tilde{\\mathbb{[A-Z]}}")
+ (#set! priority 101)
+ (#set-pairs! @conceal conceal
+   "\\tilde{\\mathbb{A}}" "𝔸̃"
+   "\\tilde{\\mathbb{B}}" "𝔹̃"
+   "\\tilde{\\mathbb{C}}" "ℂ̃"
+   "\\tilde{\\mathbb{D}}" "𝔻̃"
+   "\\tilde{\\mathbb{E}}" "𝔼̃"
+   "\\tilde{\\mathbb{F}}" "𝔽̃"
+   "\\tilde{\\mathbb{G}}" "𝔾̃"
+   "\\tilde{\\mathbb{H}}" "ℍ̃"
+   "\\tilde{\\mathbb{I}}" "𝕀̃"
+   "\\tilde{\\mathbb{J}}" "𝕁̃"
+   "\\tilde{\\mathbb{K}}" "𝕂̃"
+   "\\tilde{\\mathbb{L}}" "𝕃̃"
+   "\\tilde{\\mathbb{M}}" "𝕄̃"
+   "\\tilde{\\mathbb{N}}" "ℕ̃"
+   "\\tilde{\\mathbb{O}}" "𝕆̃"
+   "\\tilde{\\mathbb{P}}" "ℙ̃"
+   "\\tilde{\\mathbb{Q}}" "ℚ̃"
+   "\\tilde{\\mathbb{R}}" "ℝ̃"
+   "\\tilde{\\mathbb{S}}" "𝕊̃"
+   "\\tilde{\\mathbb{T}}" "𝕋̃"
+   "\\tilde{\\mathbb{U}}" "𝕌̃"
+   "\\tilde{\\mathbb{V}}" "𝕍̃"
+   "\\tilde{\\mathbb{W}}" "𝕎̃"
+   "\\tilde{\\mathbb{X}}" "𝕏̃"
+   "\\tilde{\\mathbb{Y}}" "𝕐̃"
+   "\\tilde{\\mathbb{Z}}" "ℤ̃"))
+
+((generic_command
+   command: (command_name)
+   arg: (curly_group)) @conceal
  (#lua-match? @conceal "\\widetilde{[a-zA-Z]}")
  (#set-pairs! @conceal conceal
   "\\widetilde{a}" "ã"
@@ -249,65 +341,6 @@
 ((generic_command
    command: (command_name)
    arg: (curly_group)) @conceal
- (#lua-match? @conceal "\\tilde{\\mathbf{[a-zA-Z]}}")
- (#set! priority 101)
- (#set-pairs! @conceal conceal
-   "\\tilde{\\mathbf{A}}" "𝐀̃"
-   "\\tilde{\\mathbf{B}}" "𝐁̃"
-   "\\tilde{\\mathbf{C}}" "𝐂̃"
-   "\\tilde{\\mathbf{D}}" "𝐃̃"
-   "\\tilde{\\mathbf{E}}" "𝐄̃"
-   "\\tilde{\\mathbf{F}}" "𝐅̃"
-   "\\tilde{\\mathbf{G}}" "𝐆̃"
-   "\\tilde{\\mathbf{H}}" "𝐇̃"
-   "\\tilde{\\mathbf{I}}" "𝐈̃"
-   "\\tilde{\\mathbf{J}}" "𝐉̃"
-   "\\tilde{\\mathbf{K}}" "𝐊̃"
-   "\\tilde{\\mathbf{L}}" "𝐋̃"
-   "\\tilde{\\mathbf{M}}" "𝐌̃"
-   "\\tilde{\\mathbf{N}}" "𝐍̃"
-   "\\tilde{\\mathbf{O}}" "𝐎̃"
-   "\\tilde{\\mathbf{P}}" "𝐏̃"
-   "\\tilde{\\mathbf{Q}}" "𝐐̃"
-   "\\tilde{\\mathbf{R}}" "𝐑̃"
-   "\\tilde{\\mathbf{S}}" "𝐒̃"
-   "\\tilde{\\mathbf{T}}" "𝐓̃"
-   "\\tilde{\\mathbf{U}}" "𝐔̃"
-   "\\tilde{\\mathbf{V}}" "𝐕̃"
-   "\\tilde{\\mathbf{W}}" "𝐖̃"
-   "\\tilde{\\mathbf{X}}" "𝐗̃"
-   "\\tilde{\\mathbf{Y}}" "𝐘̃"
-   "\\tilde{\\mathbf{Z}}" "𝐙̃"
-   "\\tilde{\\mathbf{a}}" "𝐚̃"
-   "\\tilde{\\mathbf{b}}" "𝐛̃"
-   "\\tilde{\\mathbf{c}}" "𝐜̃"
-   "\\tilde{\\mathbf{d}}" "𝐝̃"
-   "\\tilde{\\mathbf{e}}" "𝐞̃"
-   "\\tilde{\\mathbf{f}}" "𝐟̃"
-   "\\tilde{\\mathbf{g}}" "𝐠̃"
-   "\\tilde{\\mathbf{h}}" "𝐡̃"
-   "\\tilde{\\mathbf{i}}" "𝐢̃"
-   "\\tilde{\\mathbf{j}}" "𝐣̃"
-   "\\tilde{\\mathbf{k}}" "𝐤̃"
-   "\\tilde{\\mathbf{l}}" "𝐥̃"
-   "\\tilde{\\mathbf{m}}" "𝐦̃"
-   "\\tilde{\\mathbf{n}}" "𝐧̃"
-   "\\tilde{\\mathbf{o}}" "𝐨̃"
-   "\\tilde{\\mathbf{p}}" "𝐩̃"
-   "\\tilde{\\mathbf{q}}" "𝐪̃"
-   "\\tilde{\\mathbf{r}}" "𝐫̃"
-   "\\tilde{\\mathbf{s}}" "𝐬̃"
-   "\\tilde{\\mathbf{t}}" "𝐭̃"
-   "\\tilde{\\mathbf{u}}" "𝐮̃"
-   "\\tilde{\\mathbf{v}}" "𝐯̃"
-   "\\tilde{\\mathbf{w}}" "𝐰̃"
-   "\\tilde{\\mathbf{x}}" "𝐱̃"
-   "\\tilde{\\mathbf{y}}" "𝐲̃"
-   "\\tilde{\\mathbf{z}}" "𝐳̃"))
-
-((generic_command
-   command: (command_name)
-   arg: (curly_group)) @conceal
  (#lua-match? @conceal "\\widetilde{\\mathbf{[a-zA-Z]}}")
  (#set! priority 101)
  (#set-pairs! @conceal conceal
@@ -363,3 +396,36 @@
    "\\widetilde{\\mathbf{x}}" "𝐱̃"
    "\\widetilde{\\mathbf{y}}" "𝐲̃"
    "\\widetilde{\\mathbf{z}}" "𝐳̃"))
+
+((generic_command
+   command: (command_name)
+   arg: (curly_group)) @conceal
+ (#lua-match? @conceal "\\widetilde{\\mathbb{[A-Z]}}")
+ (#set! priority 101)
+ (#set-pairs! @conceal conceal
+   "\\widetilde{\\mathbb{A}}" "𝔸̃"
+   "\\widetilde{\\mathbb{B}}" "𝔹̃"
+   "\\widetilde{\\mathbb{C}}" "ℂ̃"
+   "\\widetilde{\\mathbb{D}}" "𝔻̃"
+   "\\widetilde{\\mathbb{E}}" "𝔼̃"
+   "\\widetilde{\\mathbb{F}}" "𝔽̃"
+   "\\widetilde{\\mathbb{G}}" "𝔾̃"
+   "\\widetilde{\\mathbb{H}}" "ℍ̃"
+   "\\widetilde{\\mathbb{I}}" "𝕀̃"
+   "\\widetilde{\\mathbb{J}}" "𝕁̃"
+   "\\widetilde{\\mathbb{K}}" "𝕂̃"
+   "\\widetilde{\\mathbb{L}}" "𝕃̃"
+   "\\widetilde{\\mathbb{M}}" "𝕄̃"
+   "\\widetilde{\\mathbb{N}}" "ℕ̃"
+   "\\widetilde{\\mathbb{O}}" "𝕆̃"
+   "\\widetilde{\\mathbb{P}}" "ℙ̃"
+   "\\widetilde{\\mathbb{Q}}" "ℚ̃"
+   "\\widetilde{\\mathbb{R}}" "ℝ̃"
+   "\\widetilde{\\mathbb{S}}" "𝕊̃"
+   "\\widetilde{\\mathbb{T}}" "𝕋̃"
+   "\\widetilde{\\mathbb{U}}" "𝕌̃"
+   "\\widetilde{\\mathbb{V}}" "𝕍̃"
+   "\\widetilde{\\mathbb{W}}" "𝕎̃"
+   "\\widetilde{\\mathbb{X}}" "𝕏̃"
+   "\\widetilde{\\mathbb{Y}}" "𝕐̃"
+   "\\widetilde{\\mathbb{Z}}" "ℤ̃"))

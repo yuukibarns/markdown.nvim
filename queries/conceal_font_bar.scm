@@ -125,6 +125,98 @@
 ((generic_command
    command: (command_name)
    arg: (curly_group)) @conceal
+ (#lua-match? @conceal "\\bar{\\mathbf{[a-zA-Z]}}")
+ (#set! priority 101)
+ (#set-pairs! @conceal conceal
+   "\\bar{\\mathbf{A}}" "𝐀̅"
+   "\\bar{\\mathbf{B}}" "𝐁̅"
+   "\\bar{\\mathbf{C}}" "𝐂̅"
+   "\\bar{\\mathbf{D}}" "𝐃̅"
+   "\\bar{\\mathbf{E}}" "𝐄̅"
+   "\\bar{\\mathbf{F}}" "𝐅̅"
+   "\\bar{\\mathbf{G}}" "𝐆̅"
+   "\\bar{\\mathbf{H}}" "𝐇̅"
+   "\\bar{\\mathbf{I}}" "𝐈̅"
+   "\\bar{\\mathbf{J}}" "𝐉̅"
+   "\\bar{\\mathbf{K}}" "𝐊̅"
+   "\\bar{\\mathbf{L}}" "𝐋̅"
+   "\\bar{\\mathbf{M}}" "𝐌̅"
+   "\\bar{\\mathbf{N}}" "𝐍̅"
+   "\\bar{\\mathbf{O}}" "𝐎̅"
+   "\\bar{\\mathbf{P}}" "𝐏̅"
+   "\\bar{\\mathbf{Q}}" "𝐐̅"
+   "\\bar{\\mathbf{R}}" "𝐑̅"
+   "\\bar{\\mathbf{S}}" "𝐒̅"
+   "\\bar{\\mathbf{T}}" "𝐓̅"
+   "\\bar{\\mathbf{U}}" "𝐔̅"
+   "\\bar{\\mathbf{V}}" "𝐕̅"
+   "\\bar{\\mathbf{W}}" "𝐖̅"
+   "\\bar{\\mathbf{X}}" "𝐗̅"
+   "\\bar{\\mathbf{Y}}" "𝐘̅"
+   "\\bar{\\mathbf{Z}}" "𝐙̅"
+   "\\bar{\\mathbf{a}}" "𝐚̅"
+   "\\bar{\\mathbf{b}}" "𝐛̅"
+   "\\bar{\\mathbf{c}}" "𝐜̅"
+   "\\bar{\\mathbf{d}}" "𝐝̅"
+   "\\bar{\\mathbf{e}}" "𝐞̅"
+   "\\bar{\\mathbf{f}}" "𝐟̅"
+   "\\bar{\\mathbf{g}}" "𝐠̅"
+   "\\bar{\\mathbf{h}}" "𝐡̅"
+   "\\bar{\\mathbf{i}}" "𝐢̅"
+   "\\bar{\\mathbf{j}}" "𝐣̅"
+   "\\bar{\\mathbf{k}}" "𝐤̅"
+   "\\bar{\\mathbf{l}}" "𝐥̅"
+   "\\bar{\\mathbf{m}}" "𝐦̅"
+   "\\bar{\\mathbf{n}}" "𝐧̅"
+   "\\bar{\\mathbf{o}}" "𝐨̅"
+   "\\bar{\\mathbf{p}}" "𝐩̅"
+   "\\bar{\\mathbf{q}}" "𝐪̅"
+   "\\bar{\\mathbf{r}}" "𝐫̅"
+   "\\bar{\\mathbf{s}}" "𝐬̅"
+   "\\bar{\\mathbf{t}}" "𝐭̅"
+   "\\bar{\\mathbf{u}}" "𝐮̅"
+   "\\bar{\\mathbf{v}}" "𝐯̅"
+   "\\bar{\\mathbf{w}}" "𝐰̅"
+   "\\bar{\\mathbf{x}}" "𝐱̅"
+   "\\bar{\\mathbf{y}}" "𝐲̅"
+   "\\bar{\\mathbf{z}}" "𝐳̅"))
+
+((generic_command
+   command: (command_name)
+   arg: (curly_group)) @conceal
+ (#lua-match? @conceal "\\bar{\\mathbb{[A-Z]}}")
+ (#set! priority 101)
+ (#set-pairs! @conceal conceal
+   "\\bar{\\mathbb{A}}" "𝔸̅"
+   "\\bar{\\mathbb{B}}" "𝔹̅"
+   "\\bar{\\mathbb{C}}" "ℂ̅"
+   "\\bar{\\mathbb{D}}" "𝔻̅"
+   "\\bar{\\mathbb{E}}" "𝔼̅"
+   "\\bar{\\mathbb{F}}" "𝔽̅"
+   "\\bar{\\mathbb{G}}" "𝔾̅"
+   "\\bar{\\mathbb{H}}" "ℍ̅"
+   "\\bar{\\mathbb{I}}" "𝕀̅"
+   "\\bar{\\mathbb{J}}" "𝕁̅"
+   "\\bar{\\mathbb{K}}" "𝕂̅"
+   "\\bar{\\mathbb{L}}" "𝕃̅"
+   "\\bar{\\mathbb{M}}" "𝕄̅"
+   "\\bar{\\mathbb{N}}" "ℕ̅"
+   "\\bar{\\mathbb{O}}" "𝕆̅"
+   "\\bar{\\mathbb{P}}" "ℙ̅"
+   "\\bar{\\mathbb{Q}}" "ℚ̅"
+   "\\bar{\\mathbb{R}}" "ℝ̅"
+   "\\bar{\\mathbb{S}}" "𝕊̅"
+   "\\bar{\\mathbb{T}}" "𝕋̅"
+   "\\bar{\\mathbb{U}}" "𝕌̅"
+   "\\bar{\\mathbb{V}}" "𝕍̅"
+   "\\bar{\\mathbb{W}}" "𝕎̅"
+   "\\bar{\\mathbb{X}}" "𝕏̅"
+   "\\bar{\\mathbb{Y}}" "𝕐̅"
+   "\\bar{\\mathbb{Z}}" "ℤ̅"))
+
+((generic_command
+   command: (command_name)
+   arg: (curly_group)) @conceal
  (#lua-match? @conceal "\\overline{[a-zA-Z]}")
  (#set-pairs! @conceal conceal
   "\\overline{a}" "a̅"
@@ -245,3 +337,95 @@
   "\\overline{\\varrho}" "ϱ̅"
   "\\overline{\\varsigma}" "ς̅"
   "\\overline{\\varphi}" "φ̅"))
+
+((generic_command
+   command: (command_name)
+   arg: (curly_group)) @conceal
+ (#lua-match? @conceal "\\overline{\\mathbf{[a-zA-Z]}}")
+ (#set! priority 101)
+ (#set-pairs! @conceal conceal
+   "\\overline{\\mathbf{A}}" "𝐀̅"
+   "\\overline{\\mathbf{B}}" "𝐁̅"
+   "\\overline{\\mathbf{C}}" "𝐂̅"
+   "\\overline{\\mathbf{D}}" "𝐃̅"
+   "\\overline{\\mathbf{E}}" "𝐄̅"
+   "\\overline{\\mathbf{F}}" "𝐅̅"
+   "\\overline{\\mathbf{G}}" "𝐆̅"
+   "\\overline{\\mathbf{H}}" "𝐇̅"
+   "\\overline{\\mathbf{I}}" "𝐈̅"
+   "\\overline{\\mathbf{J}}" "𝐉̅"
+   "\\overline{\\mathbf{K}}" "𝐊̅"
+   "\\overline{\\mathbf{L}}" "𝐋̅"
+   "\\overline{\\mathbf{M}}" "𝐌̅"
+   "\\overline{\\mathbf{N}}" "𝐍̅"
+   "\\overline{\\mathbf{O}}" "𝐎̅"
+   "\\overline{\\mathbf{P}}" "𝐏̅"
+   "\\overline{\\mathbf{Q}}" "𝐐̅"
+   "\\overline{\\mathbf{R}}" "𝐑̅"
+   "\\overline{\\mathbf{S}}" "𝐒̅"
+   "\\overline{\\mathbf{T}}" "𝐓̅"
+   "\\overline{\\mathbf{U}}" "𝐔̅"
+   "\\overline{\\mathbf{V}}" "𝐕̅"
+   "\\overline{\\mathbf{W}}" "𝐖̅"
+   "\\overline{\\mathbf{X}}" "𝐗̅"
+   "\\overline{\\mathbf{Y}}" "𝐘̅"
+   "\\overline{\\mathbf{Z}}" "𝐙̅"
+   "\\overline{\\mathbf{a}}" "𝐚̅"
+   "\\overline{\\mathbf{b}}" "𝐛̅"
+   "\\overline{\\mathbf{c}}" "𝐜̅"
+   "\\overline{\\mathbf{d}}" "𝐝̅"
+   "\\overline{\\mathbf{e}}" "𝐞̅"
+   "\\overline{\\mathbf{f}}" "𝐟̅"
+   "\\overline{\\mathbf{g}}" "𝐠̅"
+   "\\overline{\\mathbf{h}}" "𝐡̅"
+   "\\overline{\\mathbf{i}}" "𝐢̅"
+   "\\overline{\\mathbf{j}}" "𝐣̅"
+   "\\overline{\\mathbf{k}}" "𝐤̅"
+   "\\overline{\\mathbf{l}}" "𝐥̅"
+   "\\overline{\\mathbf{m}}" "𝐦̅"
+   "\\overline{\\mathbf{n}}" "𝐧̅"
+   "\\overline{\\mathbf{o}}" "𝐨̅"
+   "\\overline{\\mathbf{p}}" "𝐩̅"
+   "\\overline{\\mathbf{q}}" "𝐪̅"
+   "\\overline{\\mathbf{r}}" "𝐫̅"
+   "\\overline{\\mathbf{s}}" "𝐬̅"
+   "\\overline{\\mathbf{t}}" "𝐭̅"
+   "\\overline{\\mathbf{u}}" "𝐮̅"
+   "\\overline{\\mathbf{v}}" "𝐯̅"
+   "\\overline{\\mathbf{w}}" "𝐰̅"
+   "\\overline{\\mathbf{x}}" "𝐱̅"
+   "\\overline{\\mathbf{y}}" "𝐲̅"
+   "\\overline{\\mathbf{z}}" "𝐳̅"))
+
+((generic_command
+   command: (command_name)
+   arg: (curly_group)) @conceal
+ (#lua-match? @conceal "\\overline{\\mathbb{[A-Z]}}")
+ (#set! priority 101)
+ (#set-pairs! @conceal conceal
+   "\\overline{\\mathbb{A}}" "𝔸̅"
+   "\\overline{\\mathbb{B}}" "𝔹̅"
+   "\\overline{\\mathbb{C}}" "ℂ̅"
+   "\\overline{\\mathbb{D}}" "𝔻̅"
+   "\\overline{\\mathbb{E}}" "𝔼̅"
+   "\\overline{\\mathbb{F}}" "𝔽̅"
+   "\\overline{\\mathbb{G}}" "𝔾̅"
+   "\\overline{\\mathbb{H}}" "ℍ̅"
+   "\\overline{\\mathbb{I}}" "𝕀̅"
+   "\\overline{\\mathbb{J}}" "𝕁̅"
+   "\\overline{\\mathbb{K}}" "𝕂̅"
+   "\\overline{\\mathbb{L}}" "𝕃̅"
+   "\\overline{\\mathbb{M}}" "𝕄̅"
+   "\\overline{\\mathbb{N}}" "ℕ̅"
+   "\\overline{\\mathbb{O}}" "𝕆̅"
+   "\\overline{\\mathbb{P}}" "ℙ̅"
+   "\\overline{\\mathbb{Q}}" "ℚ̅"
+   "\\overline{\\mathbb{R}}" "ℝ̅"
+   "\\overline{\\mathbb{S}}" "𝕊̅"
+   "\\overline{\\mathbb{T}}" "𝕋̅"
+   "\\overline{\\mathbb{U}}" "𝕌̅"
+   "\\overline{\\mathbb{V}}" "𝕍̅"
+   "\\overline{\\mathbb{W}}" "𝕎̅"
+   "\\overline{\\mathbb{X}}" "𝕏̅"
+   "\\overline{\\mathbb{Y}}" "𝕐̅"
+   "\\overline{\\mathbb{Z}}" "ℤ̅"))

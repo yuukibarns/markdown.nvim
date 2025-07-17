@@ -125,6 +125,98 @@
 ((generic_command
    command: (command_name)
    arg: (curly_group)) @conceal
+ (#lua-match? @conceal "\\hat{\\mathbf{[a-zA-Z]}}")
+ (#set! priority 101)
+ (#set-pairs! @conceal conceal
+   "\\hat{\\mathbf{A}}" "𝐀̂"
+   "\\hat{\\mathbf{B}}" "𝐁̂"
+   "\\hat{\\mathbf{C}}" "𝐂̂"
+   "\\hat{\\mathbf{D}}" "𝐃̂"
+   "\\hat{\\mathbf{E}}" "𝐄̂"
+   "\\hat{\\mathbf{F}}" "𝐅̂"
+   "\\hat{\\mathbf{G}}" "𝐆̂"
+   "\\hat{\\mathbf{H}}" "𝐇̂"
+   "\\hat{\\mathbf{I}}" "𝐈̂"
+   "\\hat{\\mathbf{J}}" "𝐉̂"
+   "\\hat{\\mathbf{K}}" "𝐊̂"
+   "\\hat{\\mathbf{L}}" "𝐋̂"
+   "\\hat{\\mathbf{M}}" "𝐌̂"
+   "\\hat{\\mathbf{N}}" "𝐍̂"
+   "\\hat{\\mathbf{O}}" "𝐎̂"
+   "\\hat{\\mathbf{P}}" "𝐏̂"
+   "\\hat{\\mathbf{Q}}" "𝐐̂"
+   "\\hat{\\mathbf{R}}" "𝐑̂"
+   "\\hat{\\mathbf{S}}" "𝐒̂"
+   "\\hat{\\mathbf{T}}" "𝐓̂"
+   "\\hat{\\mathbf{U}}" "𝐔̂"
+   "\\hat{\\mathbf{V}}" "𝐕̂"
+   "\\hat{\\mathbf{W}}" "𝐖̂"
+   "\\hat{\\mathbf{X}}" "𝐗̂"
+   "\\hat{\\mathbf{Y}}" "𝐘̂"
+   "\\hat{\\mathbf{Z}}" "𝐙̂"
+   "\\hat{\\mathbf{a}}" "𝐚̂"
+   "\\hat{\\mathbf{b}}" "𝐛̂"
+   "\\hat{\\mathbf{c}}" "𝐜̂"
+   "\\hat{\\mathbf{d}}" "𝐝̂"
+   "\\hat{\\mathbf{e}}" "𝐞̂"
+   "\\hat{\\mathbf{f}}" "𝐟̂"
+   "\\hat{\\mathbf{g}}" "𝐠̂"
+   "\\hat{\\mathbf{h}}" "𝐡̂"
+   "\\hat{\\mathbf{i}}" "𝐢̂"
+   "\\hat{\\mathbf{j}}" "𝐣̂"
+   "\\hat{\\mathbf{k}}" "𝐤̂"
+   "\\hat{\\mathbf{l}}" "𝐥̂"
+   "\\hat{\\mathbf{m}}" "𝐦̂"
+   "\\hat{\\mathbf{n}}" "𝐧̂"
+   "\\hat{\\mathbf{o}}" "𝐨̂"
+   "\\hat{\\mathbf{p}}" "𝐩̂"
+   "\\hat{\\mathbf{q}}" "𝐪̂"
+   "\\hat{\\mathbf{r}}" "𝐫̂"
+   "\\hat{\\mathbf{s}}" "𝐬̂"
+   "\\hat{\\mathbf{t}}" "𝐭̂"
+   "\\hat{\\mathbf{u}}" "𝐮̂"
+   "\\hat{\\mathbf{v}}" "𝐯̂"
+   "\\hat{\\mathbf{w}}" "𝐰̂"
+   "\\hat{\\mathbf{x}}" "𝐱̂"
+   "\\hat{\\mathbf{y}}" "𝐲̂"
+   "\\hat{\\mathbf{z}}" "𝐳̂"))
+
+((generic_command
+   command: (command_name)
+   arg: (curly_group)) @conceal
+ (#lua-match? @conceal "\\hat{\\mathbb{[a-zA-Z]}}")
+ (#set! priority 101)
+ (#set-pairs! @conceal conceal
+   "\\hat{\\mathbb{A}}" "𝔸̂"
+   "\\hat{\\mathbb{B}}" "𝔹̂"
+   "\\hat{\\mathbb{C}}" "ℂ̂"
+   "\\hat{\\mathbb{D}}" "𝔻̂"
+   "\\hat{\\mathbb{E}}" "𝔼̂"
+   "\\hat{\\mathbb{F}}" "𝔽̂"
+   "\\hat{\\mathbb{G}}" "𝔾̂"
+   "\\hat{\\mathbb{H}}" "ℍ̂"
+   "\\hat{\\mathbb{I}}" "𝕀̂"
+   "\\hat{\\mathbb{J}}" "𝕁̂"
+   "\\hat{\\mathbb{K}}" "𝕂̂"
+   "\\hat{\\mathbb{L}}" "𝕃̂"
+   "\\hat{\\mathbb{M}}" "𝕄̂"
+   "\\hat{\\mathbb{N}}" "ℕ̂"
+   "\\hat{\\mathbb{O}}" "𝕆̂"
+   "\\hat{\\mathbb{P}}" "ℙ̂"
+   "\\hat{\\mathbb{Q}}" "ℚ̂"
+   "\\hat{\\mathbb{R}}" "ℝ̂"
+   "\\hat{\\mathbb{S}}" "𝕊̂"
+   "\\hat{\\mathbb{T}}" "𝕋̂"
+   "\\hat{\\mathbb{U}}" "𝕌̂"
+   "\\hat{\\mathbb{V}}" "𝕍̂"
+   "\\hat{\\mathbb{W}}" "𝕎̂"
+   "\\hat{\\mathbb{X}}" "𝕏̂"
+   "\\hat{\\mathbb{Y}}" "𝕐̂"
+   "\\hat{\\mathbb{Z}}" "ℤ̂"))
+
+((generic_command
+   command: (command_name)
+   arg: (curly_group)) @conceal
  (#lua-match? @conceal "\\widehat{[a-zA-Z]}")
  (#set-pairs! @conceal conceal
   "\\widehat{a}" "â"
@@ -245,3 +337,95 @@
   "\\widehat{\\varrho}" "ϱ̂"
   "\\widehat{\\varsigma}" "ς̂"
   "\\widehat{\\varphi}" "φ̂"))
+
+((generic_command
+   command: (command_name)
+   arg: (curly_group)) @conceal
+ (#lua-match? @conceal "\\widehat{\\mathbf{[a-zA-Z]}}")
+ (#set! priority 101)
+ (#set-pairs! @conceal conceal
+   "\\widehat{\\mathbf{A}}" "𝐀̂"
+   "\\widehat{\\mathbf{B}}" "𝐁̂"
+   "\\widehat{\\mathbf{C}}" "𝐂̂"
+   "\\widehat{\\mathbf{D}}" "𝐃̂"
+   "\\widehat{\\mathbf{E}}" "𝐄̂"
+   "\\widehat{\\mathbf{F}}" "𝐅̂"
+   "\\widehat{\\mathbf{G}}" "𝐆̂"
+   "\\widehat{\\mathbf{H}}" "𝐇̂"
+   "\\widehat{\\mathbf{I}}" "𝐈̂"
+   "\\widehat{\\mathbf{J}}" "𝐉̂"
+   "\\widehat{\\mathbf{K}}" "𝐊̂"
+   "\\widehat{\\mathbf{L}}" "𝐋̂"
+   "\\widehat{\\mathbf{M}}" "𝐌̂"
+   "\\widehat{\\mathbf{N}}" "𝐍̂"
+   "\\widehat{\\mathbf{O}}" "𝐎̂"
+   "\\widehat{\\mathbf{P}}" "𝐏̂"
+   "\\widehat{\\mathbf{Q}}" "𝐐̂"
+   "\\widehat{\\mathbf{R}}" "𝐑̂"
+   "\\widehat{\\mathbf{S}}" "𝐒̂"
+   "\\widehat{\\mathbf{T}}" "𝐓̂"
+   "\\widehat{\\mathbf{U}}" "𝐔̂"
+   "\\widehat{\\mathbf{V}}" "𝐕̂"
+   "\\widehat{\\mathbf{W}}" "𝐖̂"
+   "\\widehat{\\mathbf{X}}" "𝐗̂"
+   "\\widehat{\\mathbf{Y}}" "𝐘̂"
+   "\\widehat{\\mathbf{Z}}" "𝐙̂"
+   "\\widehat{\\mathbf{a}}" "𝐚̂"
+   "\\widehat{\\mathbf{b}}" "𝐛̂"
+   "\\widehat{\\mathbf{c}}" "𝐜̂"
+   "\\widehat{\\mathbf{d}}" "𝐝̂"
+   "\\widehat{\\mathbf{e}}" "𝐞̂"
+   "\\widehat{\\mathbf{f}}" "𝐟̂"
+   "\\widehat{\\mathbf{g}}" "𝐠̂"
+   "\\widehat{\\mathbf{h}}" "𝐡̂"
+   "\\widehat{\\mathbf{i}}" "𝐢̂"
+   "\\widehat{\\mathbf{j}}" "𝐣̂"
+   "\\widehat{\\mathbf{k}}" "𝐤̂"
+   "\\widehat{\\mathbf{l}}" "𝐥̂"
+   "\\widehat{\\mathbf{m}}" "𝐦̂"
+   "\\widehat{\\mathbf{n}}" "𝐧̂"
+   "\\widehat{\\mathbf{o}}" "𝐨̂"
+   "\\widehat{\\mathbf{p}}" "𝐩̂"
+   "\\widehat{\\mathbf{q}}" "𝐪̂"
+   "\\widehat{\\mathbf{r}}" "𝐫̂"
+   "\\widehat{\\mathbf{s}}" "𝐬̂"
+   "\\widehat{\\mathbf{t}}" "𝐭̂"
+   "\\widehat{\\mathbf{u}}" "𝐮̂"
+   "\\widehat{\\mathbf{v}}" "𝐯̂"
+   "\\widehat{\\mathbf{w}}" "𝐰̂"
+   "\\widehat{\\mathbf{x}}" "𝐱̂"
+   "\\widehat{\\mathbf{y}}" "𝐲̂"
+   "\\widehat{\\mathbf{z}}" "𝐳̂"))
+
+((generic_command
+   command: (command_name)
+   arg: (curly_group)) @conceal
+ (#lua-match? @conceal "\\widehat{\\mathbb{[A-Z]}}")
+ (#set! priority 101)
+ (#set-pairs! @conceal conceal
+   "\\widehat{\\mathbb{A}}" "𝔸̂"
+   "\\widehat{\\mathbb{B}}" "𝔹̂"
+   "\\widehat{\\mathbb{C}}" "ℂ̂"
+   "\\widehat{\\mathbb{D}}" "𝔻̂"
+   "\\widehat{\\mathbb{E}}" "𝔼̂"
+   "\\widehat{\\mathbb{F}}" "𝔽̂"
+   "\\widehat{\\mathbb{G}}" "𝔾̂"
+   "\\widehat{\\mathbb{H}}" "ℍ̂"
+   "\\widehat{\\mathbb{I}}" "𝕀̂"
+   "\\widehat{\\mathbb{J}}" "𝕁̂"
+   "\\widehat{\\mathbb{K}}" "𝕂̂"
+   "\\widehat{\\mathbb{L}}" "𝕃̂"
+   "\\widehat{\\mathbb{M}}" "𝕄̂"
+   "\\widehat{\\mathbb{N}}" "ℕ̂"
+   "\\widehat{\\mathbb{O}}" "𝕆̂"
+   "\\widehat{\\mathbb{P}}" "ℙ̂"
+   "\\widehat{\\mathbb{Q}}" "ℚ̂"
+   "\\widehat{\\mathbb{R}}" "ℝ̂"
+   "\\widehat{\\mathbb{S}}" "𝕊̂"
+   "\\widehat{\\mathbb{T}}" "𝕋̂"
+   "\\widehat{\\mathbb{U}}" "𝕌̂"
+   "\\widehat{\\mathbb{V}}" "𝕍̂"
+   "\\widehat{\\mathbb{W}}" "𝕎̂"
+   "\\widehat{\\mathbb{X}}" "𝕏̂"
+   "\\widehat{\\mathbb{Y}}" "𝕐̂"
+   "\\widehat{\\mathbb{Z}}" "ℤ̂"))
