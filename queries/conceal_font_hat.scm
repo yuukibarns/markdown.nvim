@@ -56,71 +56,71 @@
   "\\hat{Y}" "Ŷ"
   "\\hat{Z}" "Ẑ"))
 
-((generic_command
-   command: (command_name)
-   arg: (curly_group)) @conceal
- (#lua-match? @conceal "\\hat{\\[a-zA-Z]+}")
- (#set! priority 101)
- (#set-pairs! @conceal conceal
-  ; Greek letters (lowercase)
-  "\\hat{\\alpha}" "α͆"
-  "\\hat{\\beta}" "β͆"
-  "\\hat{\\gamma}" "γ͆"
-  "\\hat{\\delta}" "δ͆"
-  "\\hat{\\epsilon}" "ε͆"
-  "\\hat{\\zeta}" "ζ͆"
-  "\\hat{\\eta}" "η͆"
-  "\\hat{\\theta}" "θ͆"
-  "\\hat{\\iota}" "ι͆"
-  "\\hat{\\kappa}" "κ͆"
-  "\\hat{\\lambda}" "λ͆"
-  "\\hat{\\mu}" "μ͆"
-  "\\hat{\\nu}" "ν͆"
-  "\\hat{\\xi}" "ξ͆"
-  "\\hat{\\omicron}" "ο͆"
-  "\\hat{\\pi}" "π͆"
-  "\\hat{\\rho}" "ρ͆"
-  "\\hat{\\sigma}" "σ͆"
-  "\\hat{\\tau}" "τ͆"
-  "\\hat{\\upsilon}" "υ͆"
-  "\\hat{\\phi}" "ϕ͆"
-  "\\hat{\\chi}" "χ͆"
-  "\\hat{\\psi}" "ψ͆"
-  "\\hat{\\omega}" "ω͆"
-  
-  ; Greek letters (uppercase)
-  "\\hat{\\Alpha}" "Α͆"
-  "\\hat{\\Beta}" "Β͆"
-  "\\hat{\\Gamma}" "Γ͆"
-  "\\hat{\\Delta}" "Δ͆"
-  "\\hat{\\Epsilon}" "Ε͆"
-  "\\hat{\\Zeta}" "Ζ͆"
-  "\\hat{\\Eta}" "Η͆"
-  "\\hat{\\Theta}" "Θ͆"
-  "\\hat{\\Iota}" "Ι͆"
-  "\\hat{\\Kappa}" "Κ͆"
-  "\\hat{\\Lambda}" "Λ͆"
-  "\\hat{\\Mu}" "Μ͆"
-  "\\hat{\\Nu}" "Ν͆"
-  "\\hat{\\Xi}" "Ξ͆"
-  "\\hat{\\Omicron}" "Ο͆"
-  "\\hat{\\Pi}" "Π͆"
-  "\\hat{\\Rho}" "Ρ͆"
-  "\\hat{\\Sigma}" "Σ͆"
-  "\\hat{\\Tau}" "Τ͆"
-  "\\hat{\\Upsilon}" "Υ͆"
-  "\\hat{\\Phi}" "Φ͆"
-  "\\hat{\\Chi}" "Χ͆"
-  "\\hat{\\Psi}" "Ψ͆"
-  "\\hat{\\Omega}" "Ω͆"
-  
-  ; Variants and alternate forms
-  "\\hat{\\varepsilon}" "ϵ͆"
-  "\\hat{\\vartheta}" "ϑ͆"
-  "\\hat{\\varpi}" "ϖ͆"
-  "\\hat{\\varrho}" "ϱ͆"
-  "\\hat{\\varsigma}" "ς͆"
-  "\\hat{\\varphi}" "φ͆"))
+; ((generic_command
+;    command: (command_name)
+;    arg: (curly_group)) @conceal
+;  (#lua-match? @conceal "\\hat{\\[a-zA-Z]+}")
+;  (#set! priority 101)
+;  (#set-pairs! @conceal conceal
+;   ; Greek letters (lowercase)
+;   "\\hat{\\alpha}" "α͆"
+;   "\\hat{\\beta}" "β͆"
+;   "\\hat{\\gamma}" "γ͆"
+;   "\\hat{\\delta}" "δ͆"
+;   "\\hat{\\epsilon}" "ε͆"
+;   "\\hat{\\zeta}" "ζ͆"
+;   "\\hat{\\eta}" "η͆"
+;   "\\hat{\\theta}" "θ͆"
+;   "\\hat{\\iota}" "ι͆"
+;   "\\hat{\\kappa}" "κ͆"
+;   "\\hat{\\lambda}" "λ͆"
+;   "\\hat{\\mu}" "μ͆"
+;   "\\hat{\\nu}" "ν͆"
+;   "\\hat{\\xi}" "ξ͆"
+;   "\\hat{\\omicron}" "ο͆"
+;   "\\hat{\\pi}" "π͆"
+;   "\\hat{\\rho}" "ρ͆"
+;   "\\hat{\\sigma}" "σ͆"
+;   "\\hat{\\tau}" "τ͆"
+;   "\\hat{\\upsilon}" "υ͆"
+;   "\\hat{\\phi}" "ϕ͆"
+;   "\\hat{\\chi}" "χ͆"
+;   "\\hat{\\psi}" "ψ͆"
+;   "\\hat{\\omega}" "ω͆"
+;
+;   ; Greek letters (uppercase)
+;   "\\hat{\\Alpha}" "Α͆"
+;   "\\hat{\\Beta}" "Β͆"
+;   "\\hat{\\Gamma}" "Γ͆"
+;   "\\hat{\\Delta}" "Δ͆"
+;   "\\hat{\\Epsilon}" "Ε͆"
+;   "\\hat{\\Zeta}" "Ζ͆"
+;   "\\hat{\\Eta}" "Η͆"
+;   "\\hat{\\Theta}" "Θ͆"
+;   "\\hat{\\Iota}" "Ι͆"
+;   "\\hat{\\Kappa}" "Κ͆"
+;   "\\hat{\\Lambda}" "Λ͆"
+;   "\\hat{\\Mu}" "Μ͆"
+;   "\\hat{\\Nu}" "Ν͆"
+;   "\\hat{\\Xi}" "Ξ͆"
+;   "\\hat{\\Omicron}" "Ο͆"
+;   "\\hat{\\Pi}" "Π͆"
+;   "\\hat{\\Rho}" "Ρ͆"
+;   "\\hat{\\Sigma}" "Σ͆"
+;   "\\hat{\\Tau}" "Τ͆"
+;   "\\hat{\\Upsilon}" "Υ͆"
+;   "\\hat{\\Phi}" "Φ͆"
+;   "\\hat{\\Chi}" "Χ͆"
+;   "\\hat{\\Psi}" "Ψ͆"
+;   "\\hat{\\Omega}" "Ω͆"
+;
+;   ; Variants and alternate forms
+;   "\\hat{\\varepsilon}" "ϵ͆"
+;   "\\hat{\\vartheta}" "ϑ͆"
+;   "\\hat{\\varpi}" "ϖ͆"
+;   "\\hat{\\varrho}" "ϱ͆"
+;   "\\hat{\\varsigma}" "ς͆"
+;   "\\hat{\\varphi}" "φ͆"))
 
 ((generic_command
    command: (command_name)
@@ -272,71 +272,71 @@
   "\\widehat{Y}" "Ŷ"
   "\\widehat{Z}" "Ẑ"))
 
-((generic_command
-   command: (command_name)
-   arg: (curly_group)) @conceal
- (#lua-match? @conceal "\\widehat{\\[a-zA-Z]+}")
- (#set! priority 101)
- (#set-pairs! @conceal conceal
-  ; Greek letters (lowercase)
-  "\\widehat{\\alpha}" "α͆"
-  "\\widehat{\\beta}" "β͆"
-  "\\widehat{\\gamma}" "γ͆"
-  "\\widehat{\\delta}" "δ͆"
-  "\\widehat{\\epsilon}" "ε͆"
-  "\\widehat{\\zeta}" "ζ͆"
-  "\\widehat{\\eta}" "η͆"
-  "\\widehat{\\theta}" "θ͆"
-  "\\widehat{\\iota}" "ι͆"
-  "\\widehat{\\kappa}" "κ͆"
-  "\\widehat{\\lambda}" "λ͆"
-  "\\widehat{\\mu}" "μ͆"
-  "\\widehat{\\nu}" "ν͆"
-  "\\widehat{\\xi}" "ξ͆"
-  "\\widehat{\\omicron}" "ο͆"
-  "\\widehat{\\pi}" "π͆"
-  "\\widehat{\\rho}" "ρ͆"
-  "\\widehat{\\sigma}" "σ͆"
-  "\\widehat{\\tau}" "τ͆"
-  "\\widehat{\\upsilon}" "υ͆"
-  "\\widehat{\\phi}" "ϕ͆"
-  "\\widehat{\\chi}" "χ͆"
-  "\\widehat{\\psi}" "ψ͆"
-  "\\widehat{\\omega}" "ω͆"
-  
-  ; Greek letters (uppercase)
-  "\\widehat{\\Alpha}" "Α͆"
-  "\\widehat{\\Beta}" "Β͆"
-  "\\widehat{\\Gamma}" "Γ͆"
-  "\\widehat{\\Delta}" "Δ͆"
-  "\\widehat{\\Epsilon}" "Ε͆"
-  "\\widehat{\\Zeta}" "Ζ͆"
-  "\\widehat{\\Eta}" "Η͆"
-  "\\widehat{\\Theta}" "Θ͆"
-  "\\widehat{\\Iota}" "Ι͆"
-  "\\widehat{\\Kappa}" "Κ͆"
-  "\\widehat{\\Lambda}" "Λ͆"
-  "\\widehat{\\Mu}" "Μ͆"
-  "\\widehat{\\Nu}" "Ν͆"
-  "\\widehat{\\Xi}" "Ξ͆"
-  "\\widehat{\\Omicron}" "Ο͆"
-  "\\widehat{\\Pi}" "Π͆"
-  "\\widehat{\\Rho}" "Ρ͆"
-  "\\widehat{\\Sigma}" "Σ͆"
-  "\\widehat{\\Tau}" "Τ͆"
-  "\\widehat{\\Upsilon}" "Υ͆"
-  "\\widehat{\\Phi}" "Φ͆"
-  "\\widehat{\\Chi}" "Χ͆"
-  "\\widehat{\\Psi}" "Ψ͆"
-  "\\widehat{\\Omega}" "Ω͆"
-  
-  ; Variants and alternate forms
-  "\\widehat{\\varepsilon}" "ϵ͆"
-  "\\widehat{\\vartheta}" "ϑ͆"
-  "\\widehat{\\varpi}" "ϖ͆"
-  "\\widehat{\\varrho}" "ϱ͆"
-  "\\widehat{\\varsigma}" "ς͆"
-  "\\widehat{\\varphi}" "φ͆"))
+; ((generic_command
+;    command: (command_name)
+;    arg: (curly_group)) @conceal
+;  (#lua-match? @conceal "\\widehat{\\[a-zA-Z]+}")
+;  (#set! priority 101)
+;  (#set-pairs! @conceal conceal
+;   ; Greek letters (lowercase)
+;   "\\widehat{\\alpha}" "α͆"
+;   "\\widehat{\\beta}" "β͆"
+;   "\\widehat{\\gamma}" "γ͆"
+;   "\\widehat{\\delta}" "δ͆"
+;   "\\widehat{\\epsilon}" "ε͆"
+;   "\\widehat{\\zeta}" "ζ͆"
+;   "\\widehat{\\eta}" "η͆"
+;   "\\widehat{\\theta}" "θ͆"
+;   "\\widehat{\\iota}" "ι͆"
+;   "\\widehat{\\kappa}" "κ͆"
+;   "\\widehat{\\lambda}" "λ͆"
+;   "\\widehat{\\mu}" "μ͆"
+;   "\\widehat{\\nu}" "ν͆"
+;   "\\widehat{\\xi}" "ξ͆"
+;   "\\widehat{\\omicron}" "ο͆"
+;   "\\widehat{\\pi}" "π͆"
+;   "\\widehat{\\rho}" "ρ͆"
+;   "\\widehat{\\sigma}" "σ͆"
+;   "\\widehat{\\tau}" "τ͆"
+;   "\\widehat{\\upsilon}" "υ͆"
+;   "\\widehat{\\phi}" "ϕ͆"
+;   "\\widehat{\\chi}" "χ͆"
+;   "\\widehat{\\psi}" "ψ͆"
+;   "\\widehat{\\omega}" "ω͆"
+;
+;   ; Greek letters (uppercase)
+;   "\\widehat{\\Alpha}" "Α͆"
+;   "\\widehat{\\Beta}" "Β͆"
+;   "\\widehat{\\Gamma}" "Γ͆"
+;   "\\widehat{\\Delta}" "Δ͆"
+;   "\\widehat{\\Epsilon}" "Ε͆"
+;   "\\widehat{\\Zeta}" "Ζ͆"
+;   "\\widehat{\\Eta}" "Η͆"
+;   "\\widehat{\\Theta}" "Θ͆"
+;   "\\widehat{\\Iota}" "Ι͆"
+;   "\\widehat{\\Kappa}" "Κ͆"
+;   "\\widehat{\\Lambda}" "Λ͆"
+;   "\\widehat{\\Mu}" "Μ͆"
+;   "\\widehat{\\Nu}" "Ν͆"
+;   "\\widehat{\\Xi}" "Ξ͆"
+;   "\\widehat{\\Omicron}" "Ο͆"
+;   "\\widehat{\\Pi}" "Π͆"
+;   "\\widehat{\\Rho}" "Ρ͆"
+;   "\\widehat{\\Sigma}" "Σ͆"
+;   "\\widehat{\\Tau}" "Τ͆"
+;   "\\widehat{\\Upsilon}" "Υ͆"
+;   "\\widehat{\\Phi}" "Φ͆"
+;   "\\widehat{\\Chi}" "Χ͆"
+;   "\\widehat{\\Psi}" "Ψ͆"
+;   "\\widehat{\\Omega}" "Ω͆"
+;
+;   ; Variants and alternate forms
+;   "\\widehat{\\varepsilon}" "ϵ͆"
+;   "\\widehat{\\vartheta}" "ϑ͆"
+;   "\\widehat{\\varpi}" "ϖ͆"
+;   "\\widehat{\\varrho}" "ϱ͆"
+;   "\\widehat{\\varsigma}" "ς͆"
+;   "\\widehat{\\varphi}" "φ͆"))
 
 ((generic_command
    command: (command_name)
