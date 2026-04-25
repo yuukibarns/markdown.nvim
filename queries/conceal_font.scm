@@ -1,7 +1,22 @@
-; (generic_command
-;   command: (command_name) @conceal
-;   (#any-of? @conceal "\\emph" "\\mathit" "\\textit" "\\textbf")
-;   (#set! conceal ""))
+(generic_command
+  command: (command_name) @cmd
+  (#any-of? @cmd "\\emph" "\\textit" "\\textbf")
+  (#set! priority 101)
+  (#set! conceal ""))
+
+(generic_command
+  command: (command_name) @_cmd
+  (#any-of? @_cmd "\\emph" "\\textit" "\\textbf")
+  arg: (curly_group
+    "{" @open)
+  (#set! conceal ""))
+
+(generic_command
+  command: (command_name) @_cmd
+  (#any-of? @_cmd "\\emph" "\\textit" "\\textbf")
+  arg: (curly_group
+    "}" @close)
+  (#set! conceal ""))
 
 (generic_command
   command: ((command_name) @cmd
