@@ -22,7 +22,7 @@ L._defaults = {
 function L.setup(args)
 	args = vim.tbl_deep_extend("force", L._defaults, args == nil and {} or args)
 	vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
-		pattern = { "*.tex", "*.md", "*.py" },
+		pattern = { "*.tex", "*.md", "*.Rmd" },
 		callback = function()
 			L.conceals.init(args.conceals)
 		end,
