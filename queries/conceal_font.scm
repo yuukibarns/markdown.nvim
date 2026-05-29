@@ -166,7 +166,7 @@
 ((generic_command
    command: (command_name)
    arg: (curly_group)) @conceal
- (#lua-match? @conceal "\\mathscr{A-Z}")
+ (#lua-match? @conceal "\\mathscr{[A-Z]}")
  (#set-pairs! @conceal conceal
   "\\mathscr{A}" "𝓐"
   "\\mathscr{B}" "𝓑"
